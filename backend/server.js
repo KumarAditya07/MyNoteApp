@@ -1,9 +1,11 @@
 const express = require('express');
 const notes = require('./data/notes')
 const dotenv = require('dotenv');
+const cors = require('cors');
 
 
 const app = express();
+app.use(cors());
 dotenv.config();
 
 app.get('/',(req,res)=>{
