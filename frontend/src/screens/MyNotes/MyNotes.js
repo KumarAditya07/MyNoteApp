@@ -34,7 +34,7 @@ const MyNotes = () => {
           </Button>
           </Link>
           {notes.map((note) => (
-            <Accordion defaultActiveKey="0" flush key={note._id}>
+            <Accordion  flush key={note._id}>
             <Accordion.Item eventKey="0">
             <Card style={{ margin: 10 }}>
               <Card.Header style={{ display: "flex" }}>
